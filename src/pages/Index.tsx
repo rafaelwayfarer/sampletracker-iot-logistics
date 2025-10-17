@@ -16,7 +16,7 @@ import {
 } from "lucide-react";
 import logoFull from "@/assets/logo-full.png";
 import logoHero from "@/assets/logo-hero.png";
-import logoIcon from "@/assets/logo-icon.png";
+import device from "@/assets/device.png";
 import clientLaboratory from "@/assets/client-laboratory.jpg";
 import clientHospital from "@/assets/client-hospital.jpg";
 import clientPharma from "@/assets/client-pharma.jpg";
@@ -176,7 +176,7 @@ const Index = () => {
                   </div>
                 </div>
                 <div className="flex justify-center mt-8">
-                  <img src={logoIcon} alt="SampleTracker Device" className="h-32 md:h-40" />
+                  <img src={device} alt="SampleTracker Device" className="h-32 md:h-40" />
                 </div>
               </CardContent>
             </Card>
