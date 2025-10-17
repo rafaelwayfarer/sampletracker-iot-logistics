@@ -114,8 +114,7 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       {/* Header */}
       <header className="border-b bg-card/50 backdrop-blur-sm sticky top-0 z-50">
-        <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-          <img src={logoFull} alt="SampleTracker" className="h-8 md:h-10" />
+        <div className="container mx-auto px-4 py-4 flex items-center justify-end">
           <Button onClick={() => setIsDialogOpen(true)} size="lg">
             Solicitar Demonstração
           </Button>
