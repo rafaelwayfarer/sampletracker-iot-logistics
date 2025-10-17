@@ -15,7 +15,13 @@ import {
   Zap
 } from "lucide-react";
 import logoFull from "@/assets/logo-full.png";
+import logoHero from "@/assets/logo-hero.png";
 import logoIcon from "@/assets/logo-icon.png";
+import clientLaboratory from "@/assets/client-laboratory.jpg";
+import clientHospital from "@/assets/client-hospital.jpg";
+import clientPharma from "@/assets/client-pharma.jpg";
+import clientVaccination from "@/assets/client-vaccination.jpg";
+import clientTransport from "@/assets/client-transport.jpg";
 
 const Index = () => {
   const [isDialogOpen, setIsDialogOpen] = useState(false);
@@ -82,11 +88,26 @@ const Index = () => {
   ];
 
   const targetAudience = [
-    "Laboratórios de Análises Clínicas e Patológicas",
-    "Hospitais e Clínicas",
-    "Indústria Farmacêutica",
-    "Clínicas de Vacinação",
-    "Transportadoras de Material Biológico e Medicamento"
+    {
+      title: "Laboratórios de Análises Clínicas e Patológicas",
+      image: clientLaboratory
+    },
+    {
+      title: "Hospitais e Clínicas",
+      image: clientHospital
+    },
+    {
+      title: "Indústria Farmacêutica",
+      image: clientPharma
+    },
+    {
+      title: "Clínicas de Vacinação",
+      image: clientVaccination
+    },
+    {
+      title: "Transportadoras de Material Biológico e Medicamento",
+      image: clientTransport
+    }
   ];
 
   return (
@@ -105,8 +126,8 @@ const Index = () => {
       <section className="py-16 md:py-24 bg-gradient-to-br from-primary/5 via-background to-accent/5">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center space-y-6">
-            <div className="inline-block">
-              <img src={logoIcon} alt="SampleTracker Icon" className="h-16 md:h-20 mx-auto mb-6" />
+            <div className="inline-block mb-6">
+              <img src={logoHero} alt="SampleTracker" className="h-20 md:h-24 mx-auto" />
             </div>
             <h1 className="text-4xl md:text-6xl font-bold leading-tight">
               Controle Total da Sua Logística de{" "}
@@ -154,6 +175,9 @@ const Index = () => {
                     <h3 className="font-semibold">Tempo de Rota</h3>
                   </div>
                 </div>
+                <div className="flex justify-center mt-8">
+                  <img src={logoIcon} alt="SampleTracker Device" className="h-32 md:h-40" />
+                </div>
               </CardContent>
             </Card>
           </div>
@@ -167,12 +191,19 @@ const Index = () => {
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
               Quem usa?
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {targetAudience.map((audience, index) => (
-                <Card key={index} className="hover:shadow-lg transition-shadow">
+                <Card key={index} className="hover:shadow-lg transition-shadow overflow-hidden">
+                  <div className="aspect-video overflow-hidden">
+                    <img 
+                      src={audience.image} 
+                      alt={audience.title} 
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
                   <CardContent className="p-6 flex items-center gap-4">
                     <CheckCircle2 className="h-6 w-6 text-primary flex-shrink-0" />
-                    <p className="font-medium">{audience}</p>
+                    <p className="font-medium">{audience.title}</p>
                   </CardContent>
                 </Card>
               ))}
