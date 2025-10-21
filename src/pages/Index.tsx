@@ -187,7 +187,7 @@ const Index = () => {
               <img 
                 src={laptopSampleTracker} 
                 alt="SampleTracker Platform Dashboard" 
-                className="w-[40%] max-w-[600px]"
+                className="w-[36%] max-w-[600px]"
               />
               <img 
                 src={sampleTrackerMobile} 
