@@ -17,8 +17,8 @@ import {
 import logoFull from "@/assets/logo-full.png";
 import logoHero from "@/assets/logo-hero.png";
 import device from "@/assets/device.png";
-import laptopSampleTracker from "@/assets/laptop_SampleTracker_transparent.png";
-import sampleTrackerMobile from "@/assets/SampleTracker-2_transparent.png";
+import laptopSampleTracker from "@/assets/laptop_SampleTracker_white.png";
+import sampleTrackerMobile from "@/assets/SampleTracker-2_white.png";
 import clientLaboratory from "@/assets/client-laboratory.jpg";
 import clientHospital from "@/assets/client-hospital.jpg";
 import clientPharma from "@/assets/client-pharma.jpg";
@@ -183,7 +183,7 @@ const Index = () => {
             </Card>
             
             {/* Platform Screenshots */}
-            <div className="mt-12 flex justify-center items-center gap-6 bg-white p-8 rounded-lg">
+            <div className="mt-12 flex justify-center items-center gap-6">
               <img 
                 src={laptopSampleTracker} 
                 alt="SampleTracker Platform Dashboard" 
