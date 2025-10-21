@@ -183,16 +183,16 @@ const Index = () => {
             </Card>
             
             {/* Platform Screenshots */}
-            <div className="mt-12 flex justify-center items-center gap-6">
+            <div className="mt-12 flex justify-center items-center gap-6 bg-white p-8 rounded-lg">
               <img 
                 src={laptopSampleTracker} 
                 alt="SampleTracker Platform Dashboard" 
-                className="w-[15%] max-w-[200px]"
+                className="w-[45%] max-w-[600px]"
               />
               <img 
                 src={sampleTrackerMobile} 
                 alt="SampleTracker Mobile App" 
-                className="w-[15%] max-w-[200px]"
+                className="w-[45%] max-w-[600px]"
               />
             </div>
           </div>
