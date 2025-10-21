@@ -17,8 +17,8 @@ import {
 import logoFull from "@/assets/logo-full.png";
 import logoHero from "@/assets/logo-hero.png";
 import device from "@/assets/device.png";
-import laptopSampleTracker from "@/assets/laptop_SampleTracker.png";
-import sampleTrackerMobile from "@/assets/SampleTracker-2.png";
+import laptopSampleTracker from "@/assets/laptop_SampleTracker_transparent.png";
+import sampleTrackerMobile from "@/assets/SampleTracker-2_transparent.png";
 import clientLaboratory from "@/assets/client-laboratory.jpg";
 import clientHospital from "@/assets/client-hospital.jpg";
 import clientPharma from "@/assets/client-pharma.jpg";
@@ -183,21 +183,17 @@ const Index = () => {
             </Card>
             
             {/* Platform Screenshots */}
-            <div className="mt-12 space-y-8">
-              <div className="flex justify-center">
-                <img 
-                  src={laptopSampleTracker} 
-                  alt="SampleTracker Platform Dashboard" 
-                  className="w-full max-w-3xl rounded-lg shadow-xl"
-                />
-              </div>
-              <div className="flex justify-center">
-                <img 
-                  src={sampleTrackerMobile} 
-                  alt="SampleTracker Mobile App" 
-                  className="w-full max-w-3xl rounded-lg shadow-xl"
-                />
-              </div>
+            <div className="mt-12 flex justify-center items-center gap-6">
+              <img 
+                src={laptopSampleTracker} 
+                alt="SampleTracker Platform Dashboard" 
+                className="w-[15%] max-w-[200px]"
+              />
+              <img 
+                src={sampleTrackerMobile} 
+                alt="SampleTracker Mobile App" 
+                className="w-[15%] max-w-[200px]"
+              />
             </div>
           </div>
         </div>
